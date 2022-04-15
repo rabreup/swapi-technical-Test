@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'web-application'`, () => {
+  it(`should have as title 'swapi-technical-Test'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('web-application');
+    expect(app.title).toEqual('swapi-technical-Test');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('web-application app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('swapi-technical-Test app is running!');
   });
 });

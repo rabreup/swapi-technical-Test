@@ -1,0 +1,8 @@
+<ng-container >
+  <app-films-table *ngIf="films$.length"
+  [films]="films$"
+  (detailsClick)="details($event)">
+
+  </app-films-table>
+  </ng-container>
+

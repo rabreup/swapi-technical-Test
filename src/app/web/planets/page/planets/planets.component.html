@@ -1,0 +1,7 @@
+<ng-container >
+  <app-planets-table *ngIf="planets$.length"
+  [planets]="planets$"
+  (detailsClick)="details($event)">
+
+  </app-planets-table>
+  </ng-container>

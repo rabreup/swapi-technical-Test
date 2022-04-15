@@ -1,0 +1,33 @@
+<mat-toolbar class="bg-light">
+  <mat-toolbar-row>
+    <div>
+      <app-search (search) = "SearchFilter($event)" ></app-search>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br>
+
+<mat-toolbar class="bg-light text-align:center">
+    <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+    <div class="menu">
+      <a mat-button [routerLink]="'/films'"> Films </a>
+      <a mat-button [routerLink]="'/people'"> People </a>
+      <a mat-button [routerLink]="'/planets'"> Planets </a>
+      <a mat-button [routerLink]="'/species'"> Species </a>
+      <a mat-button [routerLink]="'/starships'"> Starships </a>
+      <a mat-button [routerLink]="'/vehicles'"> Vehicles </a>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav-content>
+    <div class="conteiner">
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

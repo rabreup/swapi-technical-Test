@@ -1,0 +1,7 @@
+<ng-container >
+<app-people-table *ngIf="people$.length"
+[peoples]="people$"
+(detailsClick)="details($event)">
+
+</app-people-table>
+</ng-container>

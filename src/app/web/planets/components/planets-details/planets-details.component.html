@@ -1,0 +1,38 @@
+<mat-card class="detalis-card">
+  <mat-card-content>
+      <div class=" items-start">
+          <p class="mt-2">
+            Name :
+            {{details.name}}
+          </p>
+          <p class="font-bold mt-5">
+            Climate  :
+              {{details.climate }}
+          </p>
+          <p class="mt-2">
+            Diameter   :
+              {{details.diameter   }}
+          </p>
+          <p class="mt-2">
+            Population   :
+              {{details.population   }}
+          </p>
+          <p class="mt-2">
+            Surface_water   :
+              {{details.surface_water   }}
+          </p>
+          <p class="mt-2">
+            Terrain   :
+              {{details.terrain    }}
+          </p>
+          <p class="mt-2">
+            Rotation period :
+              {{details.rotation_period  }}
+          </p>
+      </div>
+
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button  (click)="goBack()">Back</button>
+  </mat-card-actions>
+</mat-card>

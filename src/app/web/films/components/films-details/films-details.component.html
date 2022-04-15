@@ -1,0 +1,35 @@
+<mat-card class="detalis-card">
+  <mat-card-content>
+      <div class=" items-start">
+          <p class="mt-2">
+            title :
+            {{details.title }}
+          </p>
+          <p class="font-bold mt-5">
+            Episode:
+              {{details.episode_id }}
+          </p>
+          <p class="mt-2">
+            Director :
+              {{details.director }}
+          </p>
+          <p class="mt-2">
+            Producer :
+              {{details.producer}}
+          </p>
+          <p class="mt-2">
+            Date :
+              {{details.release_date }}
+          </p>
+          <p class="mt-2">
+            Opening crawl :
+              {{details.opening_crawl }}
+          </p>
+
+      </div>
+
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button  (click)="goBack()">Back</button>
+  </mat-card-actions>
+</mat-card>
